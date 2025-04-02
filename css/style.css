@@ -13,7 +13,7 @@ header {
     height: 100vh;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.3), 
-        url('images/workshop.png') center/cover no-repeat;
+        url('images/workshop.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
