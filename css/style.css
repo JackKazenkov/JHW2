@@ -1,36 +1,4 @@
-/* Шапка с фоновым изображением */
-header {
-    height: 100vh;
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.2), 
-        url('../images/workshop.png') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.header-content {
-    max-width: 800px;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: white;
-}
-
-header p {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-/* Основные стили */
+/* ===== Глобальные стили ===== */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -40,7 +8,43 @@ body {
     padding: 0;
 }
 
-/* Навигация */
+/* ===== Шапка с фоновым изображением ===== */
+header {
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.3), 
+        url('../images/workshop.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.header-content {
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #f8f8f8;
+}
+
+/* ===== Навигация ===== */
 nav {
     text-align: center;
     padding: 20px 0;
@@ -48,6 +52,7 @@ nav {
     top: 0;
     background: #fff;
     border-bottom: 1px solid #eee;
+    z-index: 100;
 }
 
 nav a {
@@ -55,50 +60,114 @@ nav a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
 }
 
-/* Секции */
+nav a:hover {
+    color: #555;
+}
+
+/* ===== Основные секции ===== */
 section {
     max-width: 900px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
     min-height: 50vh;
 }
 
-h1, h2, h3 {
+h2 {
     font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
     text-align: center;
+    margin-bottom: 30px;
+    color: #222;
 }
 
-/* Сетка товаров */
+/* ===== Сетка товаров ===== */
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 30px;
     margin: 40px 0;
 }
 
 .product {
     border: 1px solid #eee;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: all 0.3s ease;
+    background: #fff;
 }
 
 .product:hover {
     transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #333;
 }
 
 .product img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
-/* Адаптивность */
-@media (max-width: 600px) {
+.product p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.product strong {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+/* ===== Контакты ===== */
+#contacts {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 60px 20px;
+}
+
+#contacts p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    header p {
+        font-size: 1.2rem;
+    }
+    
     nav a {
         display: block;
         margin: 10px 0;
+    }
+    
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
     }
 }
