@@ -7,3 +7,13 @@
     "price": "$800"
   }
 ]
+
+[
+  {
+    "id": 2,
+    "name": "Saoirse harp 16",
+    "image": "images/s16-1.jpg",
+    "description": "harp for traveling.",
+    "price": "$700"
+  }
+]
