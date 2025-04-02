@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Шапка с фоновым изображением -->
+    <header id="home">
+        <div class="header-content">
+            <h1>Jack Harps Workshop</h1>
+            <p>Handcrafted musical instruments from Armenia</p>
+        </div>
+    </header>
+
     <!-- Навигация -->
     <nav>
         <a href="#home">Home</a>
@@ -16,37 +24,31 @@
         <a href="#contacts">Contacts</a>
     </nav>
 
-    <!-- Главная -->
-    <!-- Главная с фоновым изображением -->
-    <header id="home">
-        <div class="header-content">
-            <h1>Jack Harps Workshop</h1>
-            <p>Handcrafted musical instruments from Armenia</p>
-        </div>
-    </header>
-
     <!-- О нас -->
     <section id="about">
         <h2>About</h2>
-        <p>Welcome to my workshop. I create unique folk instruments using traditional methods and local materials.</p>
-        <img src="images/workshop.png" alt="Workshop">
+        <p>Welcome to my workshop where tradition meets craftsmanship. Each instrument is made with care using centuries-old techniques and locally sourced materials.</p>
+        <p>Based in the heart of Armenia, I combine ancient methods with modern precision to create unique musical treasures.</p>
     </section>
 
-    <!-- Товары (заполняются через JS) -->
+    <!-- Товары -->
     <section id="products">
-        <h2>Products</h2>
+        <h2>Our Instruments</h2>
         <div class="products-grid" id="products-container">
-            <!-- Товары подгружаются из products.json -->
+            <!-- Товары будут загружаться через JavaScript -->
         </div>
     </section>
 
     <!-- Контакты -->
     <section id="contacts">
-        <h2>Contacts</h2>
+        <h2>Contact Us</h2>
         <p>Email: jackharps@example.com</p>
+        <p>Phone: +374 12 345678</p>
         <p>Instagram: @jackharps</p>
+        <p>Address: Yerevan, Armenia</p>
     </section>
 
+    <!-- Подключение JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
