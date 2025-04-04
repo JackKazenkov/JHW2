@@ -1,74 +1,14 @@
-[
-  {
-    "id": 1,
-    "name": "16 string Saoirse",
-    "price": "480$ without sharping levers \n560$ with c, f levers \n670$ with full set of levers \nA soft case: 115$ \nA pickup: 100$-150$ (depending on a brand)",
-    "description": "Saoirse 16 is the smallest harp among all we make. It weights about 1,8 kg (depends on a lever quantity). Has strap buttons and can be played while staying Made of birch plywood \n\nDimensions: 47*31cm The sound is E4 - E6 or F4 - F6",
-    "addition": "Goes with a tuning key, a lap bar and an additional set of strings of each diameter. Can be made in different colours and with various resonator holes including new ones. We just show you some variants. We can also make something special for you (including new colour, engraving etc).",
-    "image": "",
-    "category": "travel"
-  },
-  {
-    "id": 2,
-    "name": "22 string Saoirse",
-    "price": 1500,
-    "description": "just a travel 22 string harp with some plywood stuff...",
-    "addition": "",
-    "image": "",
-    "category": "travel"
-  },
-  {
-    "id": 3,
-    "name": "26 string Morna",
-    "price": 1500,
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "celtic"
-  },
-  {
-    "id": 4,
-    "name": "28 string Brona",
-    "price": 1800,
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "celtic"
-  },
-  {
-    "id": 5,
-    "name": "34 string Oran",
-    "price": 2800,
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "celtic"
-  },
-  {
-    "id": 6,
-    "name": "Romanesque harps",
-    "price": 1100,
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "historical"
-  },
-  {
-    "id": 7,
-    "name": "Renaissance harps",
-    "price": 2100,
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "historical"
-  },
-  {
-    "id": 8,
-    "name": "other historical harps",
-    "price": "",
-    "description": "",
-    "addition": "",
-    "image": "",
-    "category": "other"
-  }
-]
+{
+  "products": [
+    {
+      "name": "Гитара Fender",
+      "price": 25000,
+      "description": "Классическая электрогитара, цвет красный."
+    },
+    {
+      "name": "Скрипка Stradivarius",
+      "price": 50000,
+      "description": "Качественная копия, идеальный звук."
+    }
+  ]
+}
