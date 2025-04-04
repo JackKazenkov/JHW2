@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мастерская музыкальных инструментов</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- LightWidget для Instagram -->
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <h1>Название вашей мастерской</h1>
+      <p>Ремонт и настройка гитар, скрипок и других инструментов</p>
+    </div>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="container">
+    <!-- Блок "О нас" -->
+    <section class="about">
+      <h2>О мастерской</h2>
+      <p>Здесь краткое описание вашей мастерской, специализация и преимущества.</p>
+    </section>
+
+    <!-- Каталог инструментов (данные из JSON) -->
+    <section class="catalog">
+      <h2>Наши инструменты</h2>
+      <div class="products" id="products">
+        <!-- Товары будут подгружаться через JS -->
+      </div>
+    </section>
+
+    <!-- Instagram-галерея -->
+    <section class="gallery">
+      <h2>Наши работы</h2>
+      <iframe src="https://cdn.lightwidget.com/widgets/ваш-виджет.html" 
+              class="lightwidget-widget" 
+              style="width:100%; border:0; overflow:hidden;"></iframe>
+    </section>
+
+    <!-- Как заказать -->
+    <section class="order-info">
+      <h2>Как оформить заказ</h2>
+      <ol>
+        <li>Выберите инструмент из каталога.</li>
+        <li>Напишите нам в WhatsApp или через форму ниже.</li>
+        <li>Мы согласуем детали и сроки.</li>
+      </ol>
+    </section>
+
+    <!-- Контакты и форма -->
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <div class="contacts-grid">
+        <div class="contact-info">
+          <p> Адрес: <em>Ваш адрес</em></p>
+          <p> Телефон: <a href="tel:+79991234567">+7 999 123-45-67</a></p>
+          <p> Email: <a href="mailto:contact@example.com">contact@example.com</a></p>
+        </div>
+        <div class="contact-form">
+          <form id="feedback-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Опишите инструмент или задайте вопрос..." required></textarea>
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <p>© 2024 Мастерская музыкальных инструментов</p>
+  </footer>
+
+  <!-- Подключение JS -->
+  <script src="script.js"></script>
+</body>
+</html>
